@@ -1,0 +1,11 @@
+<li [ngClass]="{'list-group-item': true,
+                'list-group-item-success': postLoveIt > postDontLoveIt,
+                'list-group-item-danger': postLoveIt < postDontLoveIt}">
+  <p class="date">{{ postCreation | date: 'short' | uppercase }}</p>
+  <div [ngStyle]="{'color': getLoveIts()}">
+        <h3>{{postName}}</h3>
+        <p>{{postContent}}</p>
+        <button class="btn btn-success" style="margin-right: 10px" (click)="isLoveIts()">Love it</button>
+        <button class="btn btn-danger" (click)="isDontLoveIt()">Don't love it</button>
+    </div>
+</li>

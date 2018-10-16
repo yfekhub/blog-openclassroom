@@ -1,0 +1,14 @@
+.date{
+  font-style: italic;
+  font-size: large;
+  font-weight: bold;
+  color: grey;
+  float: right;
+  padding-right: 30px;
+}
+h3{
+  font-weight: bold;
+}
+.btn{
+  padding-right: 10px;
+}
